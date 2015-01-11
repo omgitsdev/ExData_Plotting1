@@ -21,7 +21,7 @@ main <- function() {
   xaxis <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
   ylab <- 'Global Active Power (kilowatts)'
   png(filename = "plot2.png",
-    width = 480, height = 480)
+    width = 480, height = 480, bg='transparent')
   plot(xaxis, data$Global_active_power, ylab=ylab, xlab='', type='l')
   dev.off()
 }

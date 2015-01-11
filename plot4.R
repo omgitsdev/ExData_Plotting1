@@ -47,7 +47,7 @@ plot22 <- function(data) {
 main <- function() {
   downloadFile()
   data <- loadFile()
-  png(filename = "plot4.png", width = 480, height = 480)
+  png(filename = "plot4.png", width = 480, height = 480, bg='transparent')
   par(mfrow=c(2,2))
   plot11(data)
   plot12(data)

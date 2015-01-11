@@ -21,7 +21,7 @@ main <- function() {
   xaxis <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
   ylab <- 'Energy sub metering'
   png(filename = "plot3.png",
-    width = 480, height = 480)
+    width = 480, height = 480, bg='transparent')
   plot(xaxis, data$Sub_metering_1, ylab=ylab, xlab='', type='l')
   lines(xaxis, data$Sub_metering_2, col='red')
   lines(xaxis, data$Sub_metering_3, col='blue')
